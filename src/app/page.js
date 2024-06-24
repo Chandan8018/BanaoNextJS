@@ -12,8 +12,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div class='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
-        <dl class='grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16'>
+      <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
+        <dl className='grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16'>
+          {/* People Card */}
           <div className='border-[#CED4DA] border-[1px] border-solid rounded-[8px] p-8 flex flex-col justify-center items-start gap-5 hover:bg-[#b494db] hover:text-white'>
             <div className='text-base font-semibold leading-7 text-gray-900 flex justify-start items-center gap-3'>
               <HiUserGroup className='text-[#8064A2] h-7 w-7 hover:text-black' />
@@ -29,6 +30,7 @@ export default function Home() {
               </span>
             </Button>
           </div>
+          {/* Place Card */}
           <div className='border-[#CED4DA] border-[1px] border-solid rounded-[8px] p-8 flex flex-col justify-center items-start gap-5 hover:bg-[#9ab167] hover:text-white'>
             <div className='text-base font-semibold leading-7 text-gray-900 flex justify-start items-center gap-3'>
               <MdLocationOn className='text-[#77933C] h-7 w-7 hover:text-black' />
@@ -45,6 +47,7 @@ export default function Home() {
               </span>
             </Button>
           </div>
+          {/* Product Card */}
           <div className='border-[#CED4DA] border-[1px] border-solid rounded-[8px] p-8 flex flex-col justify-center items-start gap-5 hover:bg-[#d4807d] hover:text-white'>
             <div className='text-base font-semibold leading-7 text-gray-900 flex justify-start items-center gap-3'>
               <BsHandbagFill className='text-[#C0504D] h-7 w-7 hover:text-black' />
@@ -60,6 +63,7 @@ export default function Home() {
               </span>
             </Button>
           </div>
+          {/* Program Card */}
           <div className='border-[#CED4DA] border-[1px] border-solid rounded-[8px] p-8 flex flex-col justify-center items-start gap-5 hover:bg-[#82c3d9] hover:text-white'>
             <div className='text-base font-semibold leading-7 text-gray-900 flex justify-start items-center gap-3'>
               <BsCalendarCheckFill className='text-[#0096C8] h-7 w-7 hover:text-black' />
@@ -75,6 +79,7 @@ export default function Home() {
               </span>
             </Button>
           </div>
+          {/* Add Your Own Section */}
           <div className='border-[#CED4DA] border-[1px] border-solid rounded-[8px] p-8 flex flex-col justify-center items-start gap-5 md:col-span-2 my-10'>
             <div className='text-base font-semibold leading-7 text-gray-900 flex justify-start items-center gap-3'>
               <IoIosAddCircle className='text-[#0096C8] h-7 w-7 hover:text-black' />
@@ -94,12 +99,12 @@ export default function Home() {
             </Button>
           </div>
         </dl>
+        {/* Testimonial Section */}
         <div className='border-[#CED4DA] border-[1px] border-solid rounded-[8px] p-8 flex flex-col justify-center items-start gap-5 md:col-span-2 my-20'>
           <div className='text-base font-semibold leading-7 text-gray-900 flex justify-start items-center gap-3'>
             <span className='rounded-full h-7 w-7 bg-[#8064A2] flex justify-center items-center'>
               <BiSolidQuoteAltLeft className='text-white h-5 w-5 hover:text-black' />
             </span>
-
             <h3 className='text-[24px] font-[600] leading-[36px]'>
               Testimonials
             </h3>
@@ -166,6 +171,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Call to Action and Additional Images */}
       <div className='bg-[#F7FDFF] p-10 flex flex-col gap-20'>
         <div className='flex flex-col gap-5'>
           <h3 className='text-[36px] font-[500] leading-[54px] italic text-black'>
